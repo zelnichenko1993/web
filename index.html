@@ -20,13 +20,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/main.js"></script>
+  
   <header class="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__top">
           <a class="link__logo" href=""><img src="images/header__logo.png" alt="" class="header__logo"></a>
-          <ul class="header__menu">
+          <div class="burger-menu mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </div>
+          <ul class="header__menu desktop">
             <li class="header__menu__item">
               <a class="header__menu__link" href="#">Work</a>
             </li>
@@ -43,6 +46,26 @@
               <a class="header__menu__link" href="#">Contacts</a>
             </li>
           </ul>
+
+          <div class="mob-menu-wrapper">
+            <ul class="header__menu_mobile mobile">
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">Work</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">About</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">Shop</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">Blog</a>
+              </li>
+              <li class="header__menu__item">
+                <a class="header__menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
            <a class="header__menu__link link__phone" href="tel:080012300123">0 800 123 000 123</a>
         </div>
       <div class="header__inner__item">
@@ -545,5 +568,6 @@
     </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
